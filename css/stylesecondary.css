@@ -1,0 +1,138 @@
+body .navbar {
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+}
+body .respond {
+  transition: 0.2s;
+}
+body .respond:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .containers {
+    flex-flow: column wrap;
+    height: 3000px;
+  }
+
+  .customborder {
+    border-bottom: 1px solid black;
+  }
+
+  main .sidenav {
+    width: 100vw;
+    height: 35px;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    position: fixed;
+    background-color: white;
+  }
+  main .sidenav a {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  main .sidenav a:hover {
+    color: white;
+    background-color: orange;
+  }
+  main section {
+    padding-top: 35px;
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    margin: auto;
+  }
+  main section .newsfeed {
+    height: 300px;
+  }
+  main section img, main section a {
+    margin: auto;
+    /* Important */
+    text-align: center;
+  }
+  main section img p, main section a p {
+    color: black;
+    font-family: helvetica, sans-serif;
+  }
+}
+@media (min-width: 768px) {
+  .containers {
+    max-width: 100vw;
+  }
+
+  main .flexgrid {
+    display: flex;
+  }
+  main .sidenav {
+    display: flex;
+    flex: 1;
+    min-width: 200px;
+    height: 100vh;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    border-right: 1px solid black;
+  }
+  main .sidenav a {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  main .sidenav a:hover {
+    color: white;
+    background-color: orange;
+  }
+  main #maincontent {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    flex: 7;
+  }
+  main div #toprow, main div #bottomrow {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  main section {
+    flex: 2;
+    height: 50vh;
+    min-width: 25vw;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+    align-items: flex-start;
+  }
+  main section .newsfeed {
+    height: 200px;
+    transition: 0.2s;
+  }
+  main section .newsfeed:hover {
+    transform: scale(1.1);
+  }
+  main section img, main section a {
+    margin: auto;
+    text-align: center;
+  }
+  main section img p, main section a p {
+    color: black;
+    font-family: helvetica, sans-serif;
+    display: inline;
+  }
+}
+
+/*# sourceMappingURL=stylesecondary.css.map */
