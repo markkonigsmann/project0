@@ -1,0 +1,30 @@
+// the classes defiend within this .scss fill
+// are to be used as examples of scss inheritance
+// throughout the web page
+%large-news-font {
+  font-family: $font-stack;
+  color: $white;
+  font-size: 7em;
+  font-weight: bold;
+  align-self: flex-start;
+  text-align: left;
+  overflow: hidden;
+  //lets text overflow in the axis of the
+  //flex-item flex container
+}
+
+%flex-parent {
+  margin: .4em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+%opacity {
+  opacity: 0.8;
+  text-decoration: none;
+}

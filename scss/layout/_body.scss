@@ -1,0 +1,24 @@
+.my-header {
+  @include flex-container($white, flex-start, $partial-width);
+  margin: 1em;
+  a {
+    @include font-basic(2.5em, bold, 0em);
+    text-align: left;
+    &:hover {
+      @include my-hover($grey);
+    }
+  }
+  @include mq(small) {
+    border-bottom: $my-border-grey;
+  }
+}
+
+.my-img {
+  width: 100%;
+  padding: 1em;
+  display: block;
+  margin: auto;
+  @include mq(x-small) {
+    width: 70%;
+  }
+}

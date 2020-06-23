@@ -1,0 +1,12 @@
+table {
+  margin: 1em;
+  margin-left: 2em;
+}
+
+th, td {
+  background-color: $white;
+  padding: .5em;
+  &:hover {
+    @include my-background-hover($light-grey);
+  }
+}

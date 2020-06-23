@@ -1,0 +1,48 @@
+@mixin mq($mq-breakpoint, $mq-breakpoints: $breakpoints) {
+  // If $mq-breakpoint is a key that exists in
+  // $mq-breakpoints, get and use the value
+  @if map-has-key($mq-breakpoints, $mq-breakpoint) {
+    $mq-breakpoint: map-get($mq-breakpoints, $mq-breakpoint);
+  }
+  @media screen and (max-width: #{$mq-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin nth-type($n) {
+  &:nth-of-type(#{$n}) {
+    @content;
+  }
+}
+
+@mixin font-basic($font-size, $font-weight, $margin, $color: black) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  margin: $margin;
+  color: $color;
+  font-family: $font-stack;
+  text-align: center;
+  text-decoration: none;
+}
+
+@mixin flex-container($color, $justify: center, $width: $full-width) {
+  background: $color;
+  justify-content: $justify;
+  width: $width;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin my-hover($color: $grey) {
+  color: $color;
+  text-decoration: none;
+  -webkit-transition: color .05s;
+  transition: color .05s;
+}
+@mixin my-background-hover($color) {
+  background-color: $color;
+  -webkit-transition: color .05s;
+  transition: color .05s;
+  text-decoration: none;
+}

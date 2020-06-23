@@ -1,0 +1,20 @@
+#nav-container {
+  @include flex-container($white);
+  height: 3.2em;
+  border-bottom: $my-border-black;
+  position: sticky;
+  top: 0;
+}
+.navitem {
+  flex: 1;
+  max-width: 25em;
+  &:hover {
+    @include my-hover($grey);
+  }
+  p {
+    @include font-basic(1em, 200, 1em);
+    &:hover {
+      @include my-hover($grey);
+    }
+  }
+}

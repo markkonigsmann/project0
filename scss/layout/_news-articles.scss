@@ -1,0 +1,27 @@
+//_news-articels.scss defines the formating for
+//sub-directories of the news page.
+//built with flexbox
+.news-container {
+  max-width: 50em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+}
+
+.page-nav, .my-contact{
+  @include flex-container($white, flex-start);
+  margin: 1em;
+  margin-left: 2em;
+}
+.my-news {
+  @include flex-container($white, center);
+  align-items: center;
+}
+.my-image {
+  width: 100vw;
+  max-width: 70em;
+}
+.progress {
+  width: 50vw;
+  margin-left: 2em;
+}

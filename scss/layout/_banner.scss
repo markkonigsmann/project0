@@ -1,0 +1,12 @@
+//this banner is used on the home page as
+//a hyperlink to news events
+#my-banner {
+  @include flex-container($blue);
+  height: 2.5em;
+  p {
+    @include font-basic(1em, 100, .5em, white);
+    @include mq(large) {
+      @include font-basic(.9em, 100, .7em, white);
+    }
+  }
+}
